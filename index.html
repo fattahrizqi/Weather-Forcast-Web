@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="search-bar">
+          <label for="search-input">
+            <i class="bx bxs-map"></i>
+          </label>
+          <input type="text" id="search-input" placeholder="Enter Location..." />
+          <button onclick="findWeather()"><i class="bx bx-search"></i></button>
+        </div>
+        <div class="content">
+          <img src="img/notFound.png" alt="weather" class="weather-img" />
+          <h1 class="temperature">Location Not Found!</h1>
+          <h3 class="description">Try again</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- my script -->
+    <script src="script.js"></script>
+  </body>
+</html>
